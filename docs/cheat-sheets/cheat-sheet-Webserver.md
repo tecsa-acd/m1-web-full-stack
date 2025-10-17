@@ -2,7 +2,7 @@
 
 ---
 
-## 🚀 80/20 Principle: The Essential 20% of Webserver for Full-Stack Web-Developers to cover 80% of their daily tasks**
+## 🚀 80/20 Principle: The Essential 20% of Webserver for Full-Stack Web-Developers to cover 80% of their daily tasks
 
 ---
 

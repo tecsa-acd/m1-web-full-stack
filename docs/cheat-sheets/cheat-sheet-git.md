@@ -2,23 +2,32 @@
 
 ---
 
-## 🚀 80/20 Principle: The Essential 20% of GIT for Full-Stack Web-Developers to cover 80% of their daily tasks
+# 🚀 GIT Essentials for Version Control
+
+## Description
+GIT 80/20-Principle based Cheat Sheet: Solve 80% of your daily Version Control needs. For Full-Stack Developers.
 
 ---
 
-# 🎯 Purpose
+## 🎯 Purpose
 Git is an open-source version control system that tracks changes to files over time, allowing multiple people to collaborate on a project without overwriting each other's work.
 
-# 🌱 Origin
+---
+
+## 🌱 Origin
 Git has been created by Linus Torvalds, also the creator of the OS Linux. It´s a british slang term meaning a silly/unpleasant person. Torvalds jokingly called himself an "egotistical bastard" who names all his projects after himself. The first stable version was released on December 2005.
 
-# ⚙️ Ubuntu Installation
+---
+
+## 🧠 Essentials
+
+### ⚙️ Ubuntu Installation
 ```bash
 sudo apt update; sudo apt install git
 git --version
 ```
 
-# 🔁 **Git Workflow**
+### 🔁 Git Workflow
 <img src="../cheat-sheets/imgs/git-workflow.png" width="400" height="500" alt="Git Workflow">
 
 * **Local vs Remote:**
@@ -36,8 +45,9 @@ git --version
   - Merge after review & finish
 * **.gitignore** Exclude files from version control. e.g. binaries, logs, tmp files...
 
+---
 
-# 🔧 **Core Commands**
+### 🔧 Core Commands
 
 * `git init`
   → Initialize a local folder as local repository (repo)
@@ -69,11 +79,12 @@ git --version
 * `git log @{u}..HEAD`
   → View all commits on current local branch, that are not yet on its upstream remote branch
 
-
 * `git config --global --list` 
 → Display the global git configuration
 
-# 🌿 **Branching**
+---
+
+### 🌿 Branching
 
 * `git checkout -b feature/login`
   → Create & switch to a new feature branch.
@@ -84,7 +95,9 @@ git --version
 * `git merge feature/login`
   → Merge feature branch `feature/login` into current local branch.
 
-# 🧼 **Undo & Fixes**
+--- 
+
+### 🧼 Undo & Fixes
 
 * `git restore index.html`
   → Discard changes in `index.html`.
@@ -92,7 +105,9 @@ git --version
 * `git reset --soft HEAD~1`
   → Undo last commit but keep the file changes.
 
-# 🌐 **GitHub Integration**
+---
+
+### 🌐 GitHub Integration
 
 * Create local Repo & Push to GitHub Remote Repo
   1.  **Create local repo:** Open terminal in local WS & run `git init`
@@ -123,11 +138,11 @@ git --version
 6. Use PAT in Git CMDs (e.g. while cloning)
   → When Git asks for credentials: Username → GitHub username; Password → PAT
 
-
-
 * Manage **Pull Request (PR)** via GitHub UI.
 
-# 👨‍💻**VS Code Integration**
+--- 
+
+### 👨‍💻**VS Code Integration**
 
 * VS Code Git Integration in Project Explorer
 
@@ -150,8 +165,9 @@ seahorse
 git config --global --unset credential.helper
 git credential-cache exit # clear any in-memory cache
 ```
+---
 
-# 🔒 **Security
+### 🔒 **Security
 
 * Git Credential Manager (GCM) is a superior choice for storing credentials:
 - Use operating system's native secure credential storage
@@ -177,6 +193,5 @@ git config --global credential.helper store`
 ```
 * Remove credential storage method with following CMD
  → `git config --global --unset credential.helper`
-
 
 ---

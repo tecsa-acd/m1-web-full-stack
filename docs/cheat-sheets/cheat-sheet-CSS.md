@@ -2,33 +2,36 @@
 
 ---
 
-## 🚀 80/20 Principle: The Essential 20% of CSS for Full-Stack Web-Developers to cover 80% of their daily tasks
+# 🚀 CSS Essentials for styling web frontends
+
+## Description
+CSS 80/20-Principle based Cheat Sheet: Solve 80% of your daily Web Frontend Styling needs. For Full-Stack Developers.
 
 ---
 
-# 🎯 Purpose
+## 🎯 Purpose
 Controls the **style and layout** of HTML elements (colors, fonts, spacing, positioning).
 
 ---
 
-# 🌱 Origin
+## 🌱 Origin
 Introduced by **Håkon Wium Lie** in **1996**.  
 Name = *Cascading Style Sheets* → describes how styles “cascade” from multiple sources.
 
 ---
 
-# 🧠 Essentials
+## 🧠 Essentials
 
 → [CSS Documentation: developer.mozilla.org/en-US/docs/Web/CSS](developer.mozilla.org/en-US/docs/Web/CSS)
 
-## 🎨 Selectors
+### 🎨 Selectors
 ```css
 /* Select by element: */ p { color: blue; }
 /* Select by class: */ .myClass { background: yellow; }
 /* Select by id: */ #myId { font-size: 24px; }
 ```
 
-## 🎨 Colors & Backgrounds
+### 🎨 Colors & Backgrounds
 * **Examples**
 ```css
 .myClass { background: linear-gradient(to right, red, orange); }
@@ -39,7 +42,7 @@ body {
 ```
 * **RGB (Red, Green & Blue)**: a color model where these 3 primary colors of light are combined in various intensities to create a wide spectrum of colors on screens. `#f0f0f0 = rgb(240, 240, 240)`
 
-## 🔤 Text & Fonts
+### 🔤 Text & Fonts
 ```css
 h1 {
   font-family: Arial, sans-serif;
@@ -50,19 +53,19 @@ h1 {
 }
 ```
 
-## 📏 Box Model
-<img src="./imgs/css-box-model.png" width="350" height="250" alt="Git Workflow">  
+### 📏 Box Model
+<img src="./imgs/css-box-model.png" width="350" height="250" alt="Box Model">  
 
 ```css
 div {
   width: 200px;
   border: 2px solid black;
-  padding: 10px; /* inside (Protects content) */
-  margin: 20px; /* outside (moves box away from others)*/
+  padding: 10px; /* inside ([P]rotects content) */
+  margin: 20px; /* outside ([M]oves box away from others)*/
 }
 ```
 
-## 🔗 Links & Buttons
+### 🔗 Links & Buttons
 ```css
 a {
   color: blue;
@@ -79,7 +82,7 @@ button {
 }
 ```
 
-## 📐 Layout (Flexbox & Grid)
+### 📐 Layout (Flexbox & Grid)
 ```css
 .flex_container { /* Flexbox */
   display: flex;
@@ -95,7 +98,7 @@ button {
 }
 ```
 
-## 🧩 Reusability 
+### 🧩 Reusability 
 ```css
 :root {
   --main-color: teal; /* define variable */
@@ -106,7 +109,7 @@ button {
 }
 ```
 
-## 📍 Positioning
+### 📍 Positioning
 ```html
 <div class="static">Static</div>
 <div class="relative">Relative</div>
@@ -124,7 +127,7 @@ button {
 div { width: 100px; height: 50px; color: white; margin: 10px; display: flex; align-items: center; justify-content: center; }
  ```
 
-## ⚖️ Core CSS Units
+### ⚖️ Core CSS Units
 
 1. `px` stands for **pixels**, a **fixed, absolute CSS unit**.
 * `1px` = 1 dot on the screen (depends on device resolution).

@@ -2,45 +2,53 @@
 
 ---
 
-## 🚀 80/20 Principle: The Essential 20% of TLS/SSL for Full-Stack Web-Developers to cover 80% of their daily tasks
+# 🚀 TLS/HTTPS Essentials for securing web frontends
+
+## Description
+TLS/HTTPS 80/20-Principle based Cheat Sheet: Solve 80% of your daily Web Frontend Security needs. For Full-Stack Developers.
 
 ---
 
-# 🎯 Purpose
+## 🎯 Purpose
 SSL/TLS encrypts communication between clients & servers to ensure confidentiality, integrity, & authenticity of data over the internet.
 
 ---
 
-# 🌱 Origin
+## 🌱 Origin
 SSL (Secure Sockets Layer) was created by Netscape in 1994.  
 TLS (Transport Layer Security), its successor, was first standardized by the IETF in 1999 as a more secure and efficient version.  
 The term "TLS" is now the correct standard, though "SSL" is still widely used.  
 
 ---
 
-# 🧠 Essentials
+## 🧠 Essentials
 
-## Problem - HTTP vs. HTTPS
+### HTTP vs. HTTPS (The Problem)
 Data exchanged over **HTTP** between Browser &  Website's Server is in plain, readable text. Anyone on the network, such as a hacker on a public Wi-Fi network or an internet provider, can read this data.  
 With **HTTPS = HTTP + TLS**, data turned into scrambled code (encrypted) that is unreadable to anyone who intercepts it. 
 <img src="./imgs/http-vs-https.png" width="500" height="550" alt="">  
 
-## 🔑 Certificates
+--- 
+
+### 🔑 Certificates
 - Digital files proving a server's or domain's identity.
 - Issued by Certificate Authorities (CAs), e.g., Let's Encrypt, DigiCert.
 - Contain public keys used for encryption.
 
-## 🏛️ Handshake
+---
+
+### 🏛️ Handshake
 - Client and server exchange certificates and agree on encryption keys.
 - Ensures secure communication before data transfer begins.
 **Handshake workflow**
 <img src="./imgs/TLS-Communication.png" width="500" height="550" alt="">  
 
 **Encryption Example**
-![TLS/SSL Encryption Example](imgs/)  
-<img src="./imgs/TLS-Encryption-Example.png" width="500" height="550" alt="">  
+<img src="./imgs/TLS-Encryption-Example.png" width="500" height="550" alt="TLS/SSL Encryption Example">  
 
-## 🛠️ Common Tools
+---
+
+### 🛠️ Common Tools
 - **OpenSSL**: Generate keys, CSRs, and inspect certs.
 - **Certbot**: Automate free TLS certificates with Let’s Encrypt.
 Let's Encrypt is a free & automated CA that issues digital certificates to enable HTTPS on websites, making web encryption accessible to everyone.
@@ -64,11 +72,15 @@ sudo certbot --nginx -d tecsa-acd.com -d www.tecsa-acd.com -d wof.tecsa-acd.com 
 sudo certbot renew --dry-run
 ```
 
-## 📆 Renewal
+---
+
+### 📆 Renewal
 - Certificates expire (e.g., Let's Encrypt = 90 days).
 - Automate renewal to avoid downtime.
 
-## ⚠️ Pitfalls to Avoid
+---
+
+### ⚠️ Pitfalls to Avoid
 - Using self-signed certs in production.
 - Forgetting renewal → site becomes inaccessible.
 - Serving mixed content (HTTPS site loading HTTP resources).

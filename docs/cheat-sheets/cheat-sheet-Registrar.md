@@ -3,24 +3,30 @@
 
 ---
 
-## 🚀 80/20 Principle: The Essential 20% of Domain Registration for Full-Stack Web-Developers to cover 80% of their daily tasks
+# 🚀 Registrar Essentials for Domain Registration
+
+## Description
+Registrar 80/20-Principle based Cheat Sheet: Solve 80% of your daily Domain Registration needs. For Full-Stack Developers.
 
 ---
 
-# 🎯 Purpose
+## 🎯 Purpose
 Domain registration is the process of reserving a unique name on the internet to provide a human-friendly address for your website or application.
 
 ---
 
-# 🌱 Origin
+## 🌱 Origin
 Namecheap was founded in 2000 by Richard Kirkendall. The company's name reflects its core mission to provide domain names at a very affordable price, offering a cost-effective alternative to other registrars.
 
 ---
 
-# 🧠 Essentials
+## 🧠 Essentials
 
-### Key Concepts & Workflow
-- **Domain Name System (DNS):** Think of the DNS as the internet's phonebook. It translates human-readable domain names (like `google.com`) into IP addresses (like `172.217.16.142`) that computers use to find each other.
+### Domain Registrar Comparison
+![Domain Registrar Comparision 2025](./imgs/registrar-comparison-2025.png)
+
+### DNS Key Concepts & Workflow
+- **Domain Name System (DNS):** Think of the DNS as the internet's phonebook. It translates human-readable domain names (like `google.com`) into IP addresses (like `23.34.45.56`) that computers use to find each other.
 - **DNS Records:** These are the specific entries within the DNS that tell the internet where to send traffic for your domain.
   - **A Record:** The most common record. It maps a domain or subdomain name to an IPv4 address. This is what you'll use to point your domain to your VPS.
   - **CNAME Record:** Used to create an alias, mapping a subdomain to another domain name instead of an IP address.
@@ -33,9 +39,6 @@ It is treated as an independent website and requires its own DNS record to point
 
 - Subdirectory: A folder or path located within your main domain: e.g. `example.com/blog`. 
 It is part of the same website and shares the same DNS record and server as the root domain.
-
-### Domain Registrar Comparison
-![Domain Registrar Comparision 2025](./imgs/registrar-comparison-2025.png)
 
 
 ### Step-by-Step Configuration at Namecheap

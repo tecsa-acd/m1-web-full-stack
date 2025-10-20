@@ -2,27 +2,29 @@
 
 ---
 
-## 🚀 80/20 Principle: The Essential 20% of MariaDb for Full-Stack Web-Developers to cover 80% of their daily tasks
+# 🚀 MariaDb Essentials as SQL Database
+
+## Description
+MariaDb 80/20-Principle based Cheat Sheet: Solve 80% of your daily SQL Database needs. For Full-Stack Developers.
 
 ---
 
-# 🎯 Purpose
+## 🎯 Purpose
 MariaDB is a popular open-source Relational Database Management System (RDBMS) used for storing, managing, and retrieving structured data.
 
 ---
 
-# 🌱 Origin
+## 🌱 Origin
 MariaDB is a community-developed fork of the MySQL relational DB, created by its original developers in 2009. The name comes from "Maria" the younger daughter of Michael Widenius, the founder of MySQL.
 
 ---
 
-# 🧠 Essentials
+## 🧠 Essentials
 
-[MariaDb Essentials](./cheat-sheet-mariaDb-infografic.html)
-
-## Database Concepts
+### Database Concepts
 
 * RDBMS: MariaDB organizes data into tables with predefined relationships
+![RDBMS](./imgs/rdbms.png)
 
 * Data Storage Structure: Tables, Rows (records), and Columns(fields)
 
@@ -33,8 +35,9 @@ MariaDB is a community-developed fork of the MySQL relational DB, created by its
 * Indexes: Use indexes to significantly speed up SELECT queries on specific columns.
 
 * SQL Structured Query Language: standard language for managing and manipulating relational databases.
+![SQL](./imgs/sql.png)
 
-## SQL Queries  
+### SQL Queries  
 
 DDL (Data Definition Language):
 

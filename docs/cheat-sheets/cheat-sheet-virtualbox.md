@@ -2,21 +2,26 @@
 
 ---
 
-## 🚀 80/20 Principle: The Essential 20% of VirtualBox & Ubuntu VM for Full-Stack Web-Developers to cover 80% of their daily tasks
+# 🚀 VirtualBox (Ubuntu VM) Essentials as Development Environment
+
+## Description
+VirtualBox 80/20-Principle based Cheat Sheet: Solve 80% of your daily Development Environment Ubuntu VM needs. For Full-Stack Developers.
 
 ---
 
-# 🎯 Purpose
+## 🎯 Purpose
 VirtualBox is a free, open-source virtualization software that allows you to run multiple operating systems on a single machine.
 
 ---
 
-# 🌱 Origin
+## 🌱 Origin
 The name "VirtualBox" reflects its role as a "virtual box" for operating systems. Originally developed by Innotek GmbH in 2007, it was later acquired by Sun Microsystems and then Oracle, which maintains it today.
 
 ---
 
-# ⚙️ Installation
+## 🧠 Essentials
+
+### ⚙️ Installation
 - **On Windows/macOS**: Download from the official website and follow the installer.
     - https://www.virtualbox.org/wiki/Downloads (if not reachable with error "502 Bad Gateway Error, use the following link)
     - https://www.oracle.com/in/virtualization/technologies/vm/downloads/virtualbox-downloads.html
@@ -24,9 +29,7 @@ The name "VirtualBox" reflects its role as a "virtual box" for operating systems
     - "Network change/restart warning" is normal. VB needs to create network adapters for its VMs, which requires a brief network restart. You can safely proceed; your internet connection will return automatically.
 - **On Linux**: `sudo apt update; sudo apt install virtualbox`
 
-# 🧠 Essentials
-
-## 🖥️ Creating an Ubuntu VM  
+### 🖥️ Creating an Ubuntu VM  
 
 1.  Download the latest LTS version of Ubuntu Desktop ISO file from official website:  
 - https://ubuntu.com/download/desktop 
@@ -42,7 +45,7 @@ The name "VirtualBox" reflects its role as a "virtual box" for operating systems
 - "Install third-party software": adds drivers & codecs for better hardware support
 - Installation type "Erase disk and install Ubuntu": formats the selected virtual disk and delete all data.
 
-## 🖥️ Configuring a VM
+### 🖥️ Configuring a VM
 
 * 3 VM States
 - **Powered Off:** The VM is completely shut down, like a physical computer that is unplugged.
@@ -93,7 +96,8 @@ The name "VirtualBox" reflects its role as a "virtual box" for operating systems
 * Take snapshots before major changes → Allows quick rollback.
 
 --- 
-## 🧰 Troubleshooting
+
+### 🧰 Troubleshooting
 
 * On general VirtualBox errors, read Virtualbox Menu -> Log.
 * On Load VM error, close VM with the open "Power off the machine" and restart

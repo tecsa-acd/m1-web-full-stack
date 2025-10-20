@@ -2,23 +2,27 @@
 
 ---
 
-## 🚀 80/20 Principle: The Essential 20% of XAMPP for Full-Stack Web-Developers to cover 80% of their daily tasks
+# 🚀 XAMPP Essentials for Web Frontend local dev & testing 
+
+## Description
+XAMPP 80/20-Principle based Cheat Sheet: Solve 80% of your daily Web Frontend local testing needs. For Full-Stack Developers.
 
 ---
 
-# 🎯 Purpose
+## 🎯 Purpose
 XAMPP is a cross-platform package bundling Apache, MariaDB/MySQL, PHP, and Perl, designed to quickly set up a web local development environment.
 
 ---
 
-# 🌱 Origin
+## 🌱 Origin
 XAMPP was released on September 2002 by the non-profit project **Apache Friends**. The name is an acronym for it´s components: X (Cross-platform), A (Apache), M (MariaDB), P (PHP), and P (Perl).
 
 ---
 
-# 🛠 XAMPP Key Components
-<img src="../cheat-sheets/imgs/xampp-components.png" width="550" height="400" alt="Git Workflow">
+## 🧠 Essentials
 
+### 🛠 XAMPP Key Components
+<img src="../cheat-sheets/imgs/xampp-components.png" width="550" height="400" alt="XAMPP Key Components">
 - **Apache** – Web server
     - Default Port: 80 (HTTP) / 443 (HTTPS)
     - Browser Access: http://localhost/project-name
@@ -28,9 +32,9 @@ XAMPP was released on September 2002 by the non-profit project **Apache Friends*
 - **PHP & PhpMyAdmin** – Server-side scripting & DB management UI
 - **Perl** – Perl Interpreter
 
-# 🧠 Ubuntu Essentials
+---
 
-## 🔁 **Workflow**
+### 🔁 **Workflow**
 
 * Install 
 * Start services 
@@ -41,7 +45,7 @@ XAMPP was released on September 2002 by the non-profit project **Apache Friends*
 
 --- 
 
-## ⚙️ Installation
+### ⚙️ Linux Installation
 ```bash
 # Download linux installer "xampp-linux-x64-<version>-installer.run" from official website: https://www.apachefriends.org/download.html
 sudo chmod +x xampp-linux-x64-<version>-installer.run
@@ -54,11 +58,11 @@ sudo chown -R $USER:$USER /opt/lampp/htdocs
 sudo ufw status verbose # check status
 sudo ufw allow 80/tcp # Allow HTTP
 sudo ufw allow 443/tcp # Allow HTTPS
-````
+```
 
 ---
 
-## ▶️ Basic Commands
+### ▶️ Linux Basic Commands
 
 ```bash
 sudo /opt/lampp/manager-linux-x64.run # Open XAMPP GUI
@@ -69,7 +73,7 @@ sudo /opt/lampp/lampp restart         # Restart all
 
 ---
 
-## 📂 Key Paths 
+## 📂 Linux Key Paths 
 
 * **XAMPP root**: `/opt/lampp/`
 * **htdocs** (web root): `/opt/lampp/htdocs/`
@@ -81,7 +85,7 @@ sudo /opt/lampp/lampp restart         # Restart all
 
 ---
 
-## 🧪 Quick Test
+### 🧪 Quick Test
 
 Create file `info.php` in `/opt/lampp/htdocs/` with following content:
 
@@ -93,24 +97,16 @@ Visit: `http://localhost/info.php`
 
 ---
 
-## 🛡 Common Tips
+### 🛡 Common Tips
 
 * Run XAMPP as **non-root** in dev environments only.
 * Change default MySQL root password in phpMyAdmin for security.
 * Use **virtual hosts** for multiple projects:
-
-```apache
-<VirtualHost *:80>
-  DocumentRoot "/opt/lampp/htdocs/project"
-  ServerName project.local
-</VirtualHost>
-```
-
 * Restart Apache after config changes.
 
 ---
 
-## 🧰 Troubleshooting
+### 🧰 Troubleshooting
 
 * Port 80 in use? Change Apache port in `httpd.conf`.
 * MySQL not starting? Check `/opt/lampp/var/mysql/*.err`.

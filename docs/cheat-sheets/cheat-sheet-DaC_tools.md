@@ -2,20 +2,27 @@
 
 ---
 
-## 🚀 80/20 Principle: The Essential 20% of Documentation As Code (DaC) for Full-Stack Web-Developers to cover 80% of their daily tasks
+# 🚀 DaC (Documentation as Code) Essentials for Software Documentation
+
+## Description
+DaC 80/20-Principle based Cheat Sheet: Solve 80% of your daily code-based software documentation needs. For Full-Stack Developers.
 
 ---
 
-# 🎯 Purpose
+## 🎯 Purpose
 Documentation as Code (DaC) treats documentation like source code, enabling version control, automation, and collaborative development.
 
-# 🌱 Origin
-While the core principles of treating documentation as code have evolved over time, the "Documentation as Code" movement gained significant traction with the rise of Agile methodologies and DevOps practices in the 2010s, with various practitioners advocating for its adoption rather than a single creator.
+---
 
-# 🧠 Essentials
-<img src="../cheat-sheets/imgs/DaC.png" width="400" height="300" alt="DaC Workflow">
+## 🌱 Origin
+The DaC movement gained significant traction with the rise of Agile methodologies and DevOps practices in the 2010s, with various practitioners advocating for its adoption.
 
-## 🛠️ **PlantUML – Focus Areas (Text-Based Diagrams)**
+---
+
+## 🧠 Essentials
+<img src="imgs/DaC.png" width="400" height="300" alt="DaC Workflow">
+
+### 🛠️ PlantUML – Focus Areas (Text-Based Diagrams)
 
 1. **Important URLs**
 - [PlantUml official website: plantuml.com](https://www.plantuml.com/)  
@@ -44,7 +51,7 @@ While the core principles of treating documentation as code have evolved over ti
 
 ---
 
-## 🎨 **draw\.io – Focus Areas (Drag-and-Drop Visual Diagrams)**
+### 🎨 draw\.io – Focus Areas (Drag-and-Drop Visual Diagrams)
 
 1. **Important URLs**
 - [Draw.io official website: app.diagrams.net](https://app.diagrams.net/?lang=en)  
@@ -67,7 +74,7 @@ While the core principles of treating documentation as code have evolved over ti
 
 ---
 
-## ✅ **PlantUml vs. Draw.io, Which to Use When**
+### ✅ PlantUml vs. Draw.io, Which to Use When
 
 | Use Case                            | Tool         |
 | ----------------------------------- | ------------ |
@@ -78,5 +85,5 @@ While the core principles of treating documentation as code have evolved over ti
 
 ---
 
-## 📝 Markdown
+### 📝 Markdown
 [Markdown cheat sheet](./cheat-sheet-markdown.md)

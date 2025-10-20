@@ -2,34 +2,37 @@
 
 ---
 
-## 🚀 80/20 Principle: The Essential 20% of REST for Full-Stack Web-Developers to cover 80% of their daily tasks
+# 🚀 REST API Essentials for Backend-Frontend Communication
+
+## Description
+REST API 80/20-Principle based Cheat Sheet: Solve 80% of your daily REST API needs. For Full-Stack Developers.
 
 ---
 
-# 🎯 Purpose
+## 🎯 Purpose
 REST (Representational State Transfer) is an architectural style for designing web APIs that use standard HTTP (Hypertext Transfer Protocol) methods to enable communication between clients and servers.
 
 ---
 
-# 🌱 Origin
+## 🌱 Origin
 REST was introduced by **Roy Fielding** in his 2000 doctoral dissertation. The name reflects transferring a “representation” of resources (data) via stateless client-server communication.
 
 ---
 
-# 🧠 Essentials
-[Doc: developer.mozilla.org/en-US/docs/Web/HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP)
+## 🧠 Essentials
+[Doc: developer.mozilla.org/en-US/docs/Web/HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP)  
 
 ![REST Essentials](imgs/rest-api.png)
 
 ---
 
-## 🔗 Resources & Endpoints
+### 🔗 Resources & Endpoints
 * Resources are represented by **URLs - Uniform Resource Locator** (nouns, not verbs).
 * **Example**: `GET https://jsonplaceholder.typicode.com/posts`
 
 ---
 
-## ⚡ Core HTTP Methods
+### ⚡ Core HTTP Methods
 * **GET** → Read
 * **POST** → Create
 * **PUT** → Update
@@ -37,13 +40,13 @@ REST was introduced by **Roy Fielding** in his 2000 doctoral dissertation. The n
 
 ---
 
-## 📦 Request & Response Format
+### 📦 Request & Response Format
 * Mostly **JSON** (sometimes XML). Configured on server & sent as header param.
 * **Example Response:** `{ "id": 12, "name": "Bob", "email": "bob@example.com" }`
 
 ---
 
-## 📜 Status Codes
+### 📜 Status Codes
 * `200 OK` → Success
 * `201 Created` → New resource created
 * `400 Bad Request` → Invalid input
@@ -54,13 +57,13 @@ REST was introduced by **Roy Fielding** in his 2000 doctoral dissertation. The n
 
 ---
 
-## ⚖️ Statelessness
+### ⚖️ Statelessness
 * Each request contains all necessary info (server does not remember previous requests).
 * **Auth Token Example:** Included in headers every time. → `Authorization: Bearer <token>`
 
 ---
 
-## 🔑 Path and Query Parameters  
+### 🔑 Path and Query Parameters  
 
 - **Path Params**: Identify a specific resource, part of the URL.  
   → *Example:* Fetch user with ID 123.  
@@ -71,12 +74,12 @@ REST was introduced by **Roy Fielding** in his 2000 doctoral dissertation. The n
 
 ---
 
-## 🔍 Testing APIs  
+### 🔍 Testing APIs  
 
 * [Free Fake REST API - jsonplaceholder.typicode.com](https://jsonplaceholder.typicode.com/)
 
 
-### With Extension REST Client for VS Code:
+#### 1️⃣ With Extension REST Client for VS Code:
 * Create file `request.http` with following content:
 ```bash
 ### 🔹 GET (read a resource)
@@ -109,7 +112,7 @@ DELETE https://jsonplaceholder.typicode.com/posts/1
 ```
 * Click **"Send Request"** above each call inside VS Code.
 
-### With cURL (client URL):
+#### 2️⃣ With cURL (client URL):
 * cURL: command-line tool for transferring data with URL syntax from or to servers.
 ```bash
 # 🔹 Install cURL if not yet installed:
@@ -134,13 +137,13 @@ curl -X DELETE https://jsonplaceholder.typicode.com/posts/1
 
 ---
 
-## 🔒 Security Basics
+### 🔒 Security Basics
 * Use **HTTPS** to ensure data is encrypted, secure, and protected from eavesdropping or tampering.
 * Authentication with **API keys**, **JWT**, or **OAuth2**.
 
 ---
 
-## ⚡ Common Pitfalls
+### ⚡ Common Pitfalls
 * ❌ Missing `Content-Type: application/json` header when sending JSON.
 * ❌ Using wrong HTTP method (`GET` instead of `POST`, etc.).
 * ❌ Forgetting authentication tokens or API keys.

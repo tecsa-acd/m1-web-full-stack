@@ -2,26 +2,29 @@
 
 ---
 
-## 🚀 80/20 Principle: The Essential 20% of HTML for Full-Stack Web-Developers to cover 80% of their daily tasks
+# 🚀 HTML Essentials for structuring web frontends
+
+## Description
+HTML 80/20-Principle based Cheat Sheet: Solve 80% of your daily Web Frontend Structuring needs. For Full-Stack Developers.
 
 ---
 
-# 🎯 Purpose
+## 🎯 Purpose
 Defines the **structure and content** of a web page (headings, paragraphs, images, links, forms).
 
 ---
 
-# 🌱 Origin
+## 🌱 Origin
 Created by **Tim Berners-Lee** in **1991** as the standard markup language for the World Wide Web.  
 Name = *HyperText Markup Language*.
 
 ---
 
-# 🧠 Essentials
+## 🧠 Essentials
 
 → [HTML Documentation: developer.mozilla.org/en-US/docs/Web/HTML](developer.mozilla.org/en-US/docs/Web/HTML)
 
-## 📄 Basic Structure
+### 📄 Basic Structure
 Every HTML file starts with a standard structure.
 ```html
 <!DOCTYPE html>
@@ -35,7 +38,7 @@ Every HTML file starts with a standard structure.
 </html>
 ```
 
-## 📝 Text Formatting
+### 📝 Text Formatting
 Headings, paragraphs, bold, italic.
 ```html
 <h2>Main Title</h2>
@@ -43,7 +46,7 @@ Headings, paragraphs, bold, italic.
 <b>Bold</b> and <i>Italic</i> text.
 ```
 
-## 📋 Lists
+### 📋 Lists
 Ordered (`<ol>`) and unordered (`<ul>`) lists.
 ```html
 <ul>
@@ -56,7 +59,7 @@ Ordered (`<ol>`) and unordered (`<ul>`) lists.
 </ol>
 ```
 
-## 📋 Tables
+### 📋 Tables
 ```html
 <table border="1">
   <tr>
@@ -74,7 +77,7 @@ Ordered (`<ol>`) and unordered (`<ul>`) lists.
 </table>
 ```
 
-## 🔗 Links & Images
+### 🔗 Links & Images
 Use `<a>` for links and `<img>` for images.
 ```html
 <a href="https://hamadi-sy.com/">Visit Instructors Page</a>
@@ -82,7 +85,7 @@ Use `<a>` for links and `<img>` for images.
 <img src="https://nodejs.org/static/images/logo.svg" width="200" height="100" alt="NodeJs Icon">
 ```
 
-## 🎬 Multimedia
+### 🎬 Multimedia
 Embed audio and video.
 ```html
 <video controls>
@@ -93,7 +96,7 @@ Embed audio and video.
 </audio>
 ```
 
-## Semantics 
+### Semantics 
 Gives meaning to content, improves SEO & accessibility.
 ```html
 <!--top banner with title & navigation-->
@@ -127,7 +130,7 @@ Gives meaning to content, improves SEO & accessibility.
 </footer>
 ```  
 
-## 🧩 Forms & Inputs
+### 🧩 Forms & Inputs
 
 User input with `<form>`.
 
@@ -153,7 +156,7 @@ User input with `<form>`.
 </form>
 ```
 
-## 🏗️ Divs & Spans
+### 🏗️ Divs & Spans
 
 Structure or style content.
 

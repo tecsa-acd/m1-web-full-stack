@@ -2,21 +2,26 @@
 
 ---
 
-## 🚀 80/20 Principle: The Essential 20% of VS Code for Full-Stack Web-Developers to cover 80% of their daily tasks
+# 🚀 Visual Studio Code Essentials as IDE
+
+## Description
+VS Code 80/20-Principle based Cheat Sheet: Solve 80% of your daily Integrated Dev Env needs. For Full-Stack Developers.
 
 ---
 
-# 🎯 Purpose
+## 🎯 Purpose
 Visual Studio Code is a free, powerful code editor (IDE) that helps you write, debug, and manage code for almost any programming language.
 
 ---
 
-# 🌱 Origin
+## 🌱 Origin
 The name Visual Studio Code (VS Code) links it to Microsoft's "Visual Studio" developer tools, with "Code" added to distinguish it as a focused editor. The first stable version was released on April 2016.
 
 ---
 
-# ⚙️ Ubuntu Installation
+## 🧠 Essentials
+
+### ⚙️ Ubuntu Installation
 ```bash Installation
 # Follow the official installation guide https://code.visualstudio.com/docs/setup/linux 
 
@@ -30,7 +35,7 @@ exec $SHELL
 code -v
 ```
 
-```bash uninstallation
+```bash Uninstallation
 # To uninstall VS Code
 sudo apt remove code; sudo apt purge code
 # remove config files
@@ -39,9 +44,9 @@ rm -rf ~/.config/Code; rm -rf ~/.vsCode
 sudo apt autoremove; sudo apt clean
 ```
 
-# 🧠 Essentials
+---
 
-## 🛠 Useful VS Code shortcuts
+### 🛠 Useful VS Code shortcuts
 
 * **Keyboard Shortcuts** (`Ctrl+K Ctrl+S`): Show/update keyboard shortcuts
 * **Command Palette** (`Ctrl+Shift+P`): Access all commands quickly.
@@ -51,13 +56,17 @@ sudo apt autoremove; sudo apt clean
 * **Copy line up / down**: (`Shift+Alt + ↓ / ↑ `)
 * **Integrated Terminal** (`Ctrl+Shift+´`): Run commands without leaving VS Code.
 
-## 📂 Project & Source Control
+---
+
+### 📂 Project & Source Control
 
 * **Explorer Sidebar**: Navigate files and folders.
 * **Git Integration**: Commit, push, pull, and branch handling directly in VS Code.
 * **.gitignore Management**: Exclude files from version control.
 
-## 🧩 Extensions (Key Ones)
+--- 
+
+### 🧩 Extensions (Key Ones)
 
 * **Prettier**: Code formatting  
      → configure as default formatter
@@ -72,7 +81,9 @@ sudo apt autoremove; sudo apt clean
 * **GitLens**: Changes Tracker (what line of code, when, & why)
 * **REST Client**: Test APIs directly from VS Code
 
-## 🧰 Build-In Productivity Boosters
+---
+
+### 🧰 Build-In Productivity Boosters
 
 * **IntelliSense**: Autocompletion and documentation. see. https://code.visualstudio.com/docs/editing/intellisense
 * **Emmet**: Fast HTML/CSS writing. see: https://code.visualstudio.com/docs/languages/emmet

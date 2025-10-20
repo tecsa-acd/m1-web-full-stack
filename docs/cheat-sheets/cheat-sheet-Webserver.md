@@ -2,11 +2,14 @@
 
 ---
 
-## 🚀 80/20 Principle: The Essential 20% of Webserver for Full-Stack Web-Developers to cover 80% of their daily tasks
+# 🚀 Webserver Essentials for Serving Web Frontends & Backends
+
+## Description
+Webserver 80/20-Principle based Cheat Sheet: Solve 80% of your daily Serving Web Frontend & Backend needs. For Full-Stack Developers.
 
 ---
 
-# 🎯 Purpose
+## 🎯 Purpose
 
 - A webserver delivers static web content (HTML, CSS, JS, Imgs) from server´s machine to client’s browser using HTTP/HTTPS.  
 - A Reverse Proxy (RP) sits in front of backends running of servers´machine and forwards client requests to them.  
@@ -14,18 +17,18 @@
 
 ---
 
-# 🌱 Origin
+## 🌱 Origin
 
 * **Apache HTTP Server**: Released in 1995 by the Apache Software Foundation; named from “a patchy server” due to its many patches.
 * **Nginx**: Created in 2004 by Igor Sysoev in Russia to handle high concurrency and efficiency; name = “Engine X.”
 
 ---
 
-# 🧠 Essentials
+## 🧠 Essentials
 <img src="imgs/webserver.png" width="400" height="550" alt="Webserver Arc">
 
 
-## 🛠️ Core Tasks of a Webserver  
+### 🛠️ Core Tasks of a Webserver  
 - 📂 Serve static files (HTML, CSS, JS, images).  
 - 🔒 Handle HTTPS/SSL encryption.  
 - ⚡ Optimize performance (cache static content, compress responses, offload SSL/TLS).  
@@ -33,14 +36,14 @@
 - 📊 Log requests & errors for monitoring and debugging.  
 - 🔀 Forward requests to backend apps (reverse proxy).  
 - 🌍 Manage multiple sites/domains in one server (virtual hosts/server blocks).  
-### ✅ Why we need a RP
+- → ✅ **Why do we need a RP?**
 - 🌍 Single entry point: One domain (e.g., https://wof.com) can serve both frontend (/) and backend (/api). Without it, you’d need different ports/domains.
 - 🔧 Flexibility: Easy to swap or scale backend services without changing the frontend.
 - 🔒 Security: Hides backend servers from the internet, only the RP is exposed.
 - 👉 Without a RP, the frontend must know the exact address/port of the backend, you’d run into CORS issues, and managing multiple services becomes harder.
 
 
-## 🔄 Host multiple sites on one server. 
+### 🔄 Host multiple sites on one server. 
 
 * In `Apache` called `Virtual Hosts` and configured in config file `httpd-vhosts.conf`
   ```apache
@@ -57,12 +60,12 @@
   }
   ```
 
-## 📂 Serving Static Files
+### 📂 Serving Static Files
 * Copy static files to Webserver deployment Directory, to serve them to browsers
 * In `Apache` configured in Virtual Host with: `DocumentRoot "/opt/lampp/htdocs"`  
 * In `Nginx` configured in Server Block with: `root /var/www/html;`  
 
-## 🔀 Reverse Proxy
+### 🔀 Reverse Proxy
 * Configure Proxy-Passing to forward requests to backend apps (Node.js, Python...).
 * In `Apache` configured in Virtual Host with:
   ```apache
@@ -73,9 +76,13 @@
 * In `Nginx` configured in Server Block with:
   ```nginx
     proxy_pass http://localhost:3000;
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
   ```
 
-## 🔒 HTTPS / SSL Setup
+### 🔒 HTTPS / TLS Setup
 Let's Encrypt is a free & automated Certificate Authority (CA) that issues digital certificates to enable HTTPS on websites, making web encryption accessible to everyone.
 
 1. create certificate
@@ -86,7 +93,7 @@ sudo apt install certbot python3-certbot-nginx  # Nginx
 # OR
 sudo apt install certbot python3-certbot-apache # Apache
 
-# b. Request a Certificate
+# b. Request a Let´s Encrypt Certificate
 sudo certbot --nginx -d example.com -d www.example.com # Nginx
 # OR
 sudo certbot --apache -d example.com -d www.example.com # Apache
@@ -131,13 +138,13 @@ sudo certbot renew --dry-run
 3. Verify in Browser
 Open https://example.com → should show a padlock 🔒.
 
-## ⚡ Performance Basics
+### ⚡ Performance Basics
 
 * Enable caching (static assets).
 * Use compression (gzip, Brotli).
 * Prefer Nginx for high concurrency; Apache for flexibility & .htaccess.
 
-## 📦 Apache deployment
+### 📦 Apache deployment (Frontend & Backend)
 * Make  
   → FE UI available on `http://localhost/`  
   → BE API available on `http://localhost/api/`
@@ -186,7 +193,7 @@ API_URL = 'http://localhost/api'
 
 ---
 
-## 🌍 Internet access to web app running on local dev env
+### 🌍 Internet access to web app running on local dev env
 
 **Goal:** access FE UI over the internet using `http://[public-ip:8080/]`
 

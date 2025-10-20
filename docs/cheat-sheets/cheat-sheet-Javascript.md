@@ -2,25 +2,28 @@
 
 ---
 
-## 🚀 80/20 Principle: The Essential 20% of Javascript for Full-Stack Web-Developers to cover 80% of their daily tasks
+# 🚀 Javascript Essentials for web frontend interactivity
+
+## Description
+Javascript 80/20-Principle based Cheat Sheet: Solve 80% of your daily Web Frontend Interactivity needs. For Full-Stack Developers.
 
 ---
 
-# 🎯 Purpose
+## 🎯 Purpose
 Adds **interactivity and logic** to web pages (events, dynamic content, data handling). Build to run in browsers. 
 
 ---
 
-# 🌱 Origin
+## 🌱 Origin
 Created in **1995** by **Brendan Eich** at Netscape.  
 Initially called *Mocha*, renamed to *JavaScript* for marketing reasons (though unrelated to Java).
 
 ---
 
-# 🧠 Essentials of Javascript
+## 🧠 Essentials of Javascript
 → [JavaScript Documentation: developer.mozilla.org/en-US/docs/Web/JavaScript](developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-## Variables
+### Variables
 ```javascript
 //let (reassignable)
 let message = "Hello";
@@ -33,7 +36,7 @@ const PI = 3.14;
 console.log(PI); // Output: 3.14
 ```
 
-## Data Types
+### Data Types
 ```javascript
 let name = "Alice"; /*String: sequence of characters*/
 let age = 30; let price = 19.99; /*Number: numerical values*/
@@ -46,7 +49,7 @@ let user = { /* object: real-world entity with related data */
 };
 ```
 
-## Functions
+### Functions
 ```javascript
 // Declaration: block of reusable code, performing a specific task, callable by called by name
 function greet(name) {
@@ -61,7 +64,7 @@ const sayHi = () => console.log("Hi!");
 sayHi(); // Output: Hi!
 ```
 
-## Control Flow
+### Control Flow
 ```javascript
 // if / else if / else: conditional statements 
 let temperature = 20;
@@ -102,7 +105,7 @@ switch (day) {
 // Output: Start of week.
 ```
 
-## DOM (Document Object Model) Manipulation: 
+### DOM (Document Object Model) Manipulation: 
 Tree-Representation of a web page, allowing programs to dynamically change its content, structure, and style.
 
 ```javascript
@@ -126,7 +129,7 @@ button.addEventListener("click", () => {
 });
 ```
 
-## Events:
+### Events:
 ```javascript
 //onclick (when an element is clicked)
 <button onclick="console.log('Button was clicked!');">Click Me</button>
@@ -140,7 +143,7 @@ button.addEventListener("click", () => {
 </form>
 ```
 
-## Asynchronous execution (async, await, promise)
+### Asynchronous execution (async, await, promise)
 ```javascript
 // async: run function in Background and return a Promise (future result)
 async function getData() {
@@ -160,7 +163,7 @@ promise // .then() for success, .catch() for error.
 console.log("Async Function called, program continues immediately without waiting for getData's awaits.");
 ```
 
-## Fetch API: `fetch(url).then().catch()` for HTTP requests
+### Fetch API: `fetch(url).then().catch()` for HTTP requests
 ```javascript
 //fetch(url).then().catch() (for HTTP requests)
 fetch("https://api.example.com/data")
@@ -169,7 +172,7 @@ fetch("https://api.example.com/data")
     .catch(error => console.error("Error fetching:", error)); // Handle errors
 ```
 
-## Modules: `export`, `import`
+### Modules: `export`, `import`
 ```javascript
 //export (makes code available for other modules)
 //utils.js
@@ -185,11 +188,13 @@ console.log(PI); // Output: 3.14
 console.log(sum(5, 3)); // Output: 8
 ```
 
-## Error Handling:
+### Error Handling:
 ```javascript
 try {
     // run the code inside this try-block. if anything goes wrong, break the code execution there and go to the catch-block 
 } catch (error) {
     // run the code inside this catch-block when error occures inside the try-block to handle the error gracefully (e.g. show a user- friendly message
+} finally {
+    // run the code inside this finally-block in any case (success & error) bevor leaving the Code
 }
 ```

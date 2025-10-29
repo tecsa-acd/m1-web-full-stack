@@ -1,5 +1,7 @@
 // load .env config
-require('dotenv').config();
+require('dotenv').config({ 
+    path: require('path').resolve(__dirname, '..', '.env') 
+});
 
 // load db_type to choose which repo to use
 const REPO_TYPE = process.env.DB_TYPE || 'filesystem';

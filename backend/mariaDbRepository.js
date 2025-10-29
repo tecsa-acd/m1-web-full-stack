@@ -2,7 +2,9 @@
 const mariaDb = require('mariadb');
 
 // load .env config
-require('dotenv').config();
+require('dotenv').config({ 
+    path: require('path').resolve(__dirname, '..', '.env') 
+});
 
 const DB_USER = process.env.DB_USER || 'root';
 const DB_PASS = process.env.DB_PASS || '';

@@ -10,7 +10,7 @@ Performance Testing 80/20-Principle based Cheat Sheet: Solve 80% of your daily P
 ---
 
 ## 🎯 Purpose
-The purpose is to rapidly identify the major bottlenecks in a web app's response time and resource usage under specific load conditions.
+The purpose is to rapidly identify the major bottlenecks in an app's **response time** and **resource usage** under specific **load** conditions.
 
 ---
 
@@ -23,9 +23,11 @@ The Performance Testing Tool ab (Apache Bench) was created by Adam Twiss in 1996
 
 Focus on three areas: **Goals, Measurement, and Analysis.**
 
+![Performance Testing Essentials](imgs/performance-testing.png)
+
 ### **1. Core Performance NFR Types**
 
-* **Latency (Response Time):** Ensuring the server responds quickly enough for the end-user. The target should be measured at the **P90 or P95 percentile** (e.g., 90% of requests must be $\le 300\text{ ms}$).
+* **Latency (Response Time):** Ensuring the server responds quickly enough for the end-user. The target should be measured at the **P90 or P95 percentile** (e.g., 90% of requests must be $\le 300\text{ ms}$),  while the system is subjected to a specific concurrency level.
 * **Capacity (Throughput & Resource):** Ensuring the system can handle the expected number of requests without running out of CPU or memory. **Key metrics** are **Requests Per Second (RPS)** and sustained **CPU/Memory** usage under target load.
 
 ### **2. Common Load Profiles**
@@ -58,10 +60,10 @@ Focus on two primary sources of data to diagnose issues:
 Usage of `hey` for controlled NFR verification because it allows rate limiting.
 
 * **Step 1: Linux Installation**
-
+[hey github repo](https://github.com/rakyll/hey)
 ```bash
-# 1. Download the executable binary
-curl -L [https://hey-release.s3.us-east-2.amazonaws.com/hey_linux_amd64](https://hey-release.s3.us-east-2.amazonaws.com/hey_linux_amd64) -o hey
+# 1. Download the executable binary (use current link from github repo)
+wget https://hey-release.s3.us-east-2.amazonaws.com/hey_linux_amd64 
 
 # 2. Make it executable
 chmod +x hey

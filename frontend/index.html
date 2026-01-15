@@ -91,6 +91,10 @@
         const resetButton = document.getElementById('reset-button');
         const API_URL = '/api';
 
+        /**
+         * Calls REST API_URL to get the current gamestate
+         * @return {GameState { wins: number; losses: number; lastResult: string; }}
+         * */
         async function fetchGameState() {
           try {
             console.log(`User loading gamestate`);
@@ -106,7 +110,7 @@
 
         /**
          * Update FE based on game state returned from BE
-         * @param {GameState { wins: number; losses: number; lastResult: string; }}
+         * @param {gameState { wins: number; losses: number; lastResult: string; }}
          * */
         function updateFrontend(gs) {
           if (gs.lastResult == null) {
@@ -119,6 +123,10 @@
           statsDisplay.textContent = `Wins: ${gs.wins} | Losses: ${gs.losses}`;
         }
 
+        /**
+         * Calls REST API_URL/spin to spin the wheel, get new gamestate and update FE
+         * @param {gameState { wins: number; losses: number; lastResult: string; }}
+         * */
         async function spinWheel() {
           try {
             console.log(`User spinning the wheel`);
@@ -131,6 +139,10 @@
           }
         }
 
+        /**
+         * Calls REST API_URL/reset to reset the gamestate and update FE
+         * @param {gameState { wins: number; losses: number; lastResult: string; }}
+         * */
         async function resetStats() {
           try {
             console.log(`User resetting gamestate`);
